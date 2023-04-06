@@ -1,3 +1,4 @@
+import "./ColorBox.css";
 function ColorBox({ hex }) {
 	return (
 		<div

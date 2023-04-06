@@ -1,7 +1,11 @@
+import { useState } from "react";
+import ColorBox from "./ColorBox/ColorBox.js";
+
 function App() {
+	const [hex, setHex] = useState("F88EE3");
 	return (
 		<>
-			<p>Test</p>
+			<ColorBox hex={hex} />
 		</>
 	);
 }
