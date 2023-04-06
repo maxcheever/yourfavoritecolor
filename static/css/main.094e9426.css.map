@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.094e9426.css","mappings":"AAAA,UAGG,kBAAmB,CADnB,aAAc,CADd,YAGH","sources":["ColorBox/ColorBox.css"],"sourcesContent":[".ColorBox {\n   width: 40vmin;\n   height: 40vmin;\n   border-radius: 1rem;\n}"],"names":[],"sourceRoot":""}
