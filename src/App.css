@@ -1,0 +1,32 @@
+.top {
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+}
+
+.bottom {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.topColor {
+   color: white;
+   font: 1.45vmin sans-serif;
+   padding-right: 6.8vmin;
+   margin-top: -0.1vmin;
+}
+
+.bottomColor {
+   color: white;
+   font: 2vmin sans-serif;
+   margin-top: -0.1vmin;
+}
+
+.text {
+   color: white;
+   font: 1.7vmin sans-serif;
+   padding-right: 2.5vmin;
+   margin-top: -1vmin;
+   margin-bottom: 12vmin;
+}

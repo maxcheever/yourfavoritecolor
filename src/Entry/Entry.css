@@ -1,0 +1,24 @@
+.input{
+   width: 32vmin;
+   height: 4.5vmin;
+   outline: none;
+   border-radius: 1vmin;
+   text-align: center;
+}
+
+input,
+input::placeholder {
+    font: 3.25vmin/3 sans-serif;
+}
+
+.button {
+   border-radius: 1vmin;
+   height: 4vmin;
+   font: 2vmin sans-serif;
+   margin-top: 0.5vmin;
+}
+
+.button:hover {
+   cursor: pointer;
+   background-color: #bab8b8;
+}
