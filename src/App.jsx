@@ -1,7 +1,7 @@
 import { useState } from "react";
-import ColorBox from "./ColorBox/ColorBox.js";
+import ColorBox from "./ColorBox/ColorBox.jsx";
 import "./App.css";
-import Entry from "./Entry/Entry.js";
+import Entry from "./Entry/Entry.jsx";
 
 function App() {
 	const [hex1, setHex1] = useState("ffffff");
