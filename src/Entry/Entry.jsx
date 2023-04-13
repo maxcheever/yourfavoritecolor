@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./Entry.css";
 import { Keccak } from "sha3";
 
 function Entry({ update }) {
 	const [entry, setEntry] = useState("");
+	const ref = useRef(null);
+
 	// hashes the name from the entry box
 	function hashing(name) {
 		var hash = new Keccak(224);
@@ -17,15 +19,20 @@ function Entry({ update }) {
 		setEntry(event.target.value);
 	};
 
-	function onButtonClick() {
+	const onButtonClick = () => {
 		var hash = hashing(entry);
 		update(hash);
-	}
+		setEntry("");
+		ref.current.value = "";
+	};
+
+	let last10 = {};
 
 	return (
 		<>
 			<input
 				type="text"
+				ref={ref}
 				id="name"
 				name="name"
 				className="input"

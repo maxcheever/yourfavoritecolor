@@ -6,6 +6,7 @@ import Entry from "./Entry/Entry.jsx";
 function App() {
 	const [hex1, setHex1] = useState("ffffff");
 	const [hex2, setHex2] = useState("ffffff");
+
 	return (
 		<>
 			<div className="top">
