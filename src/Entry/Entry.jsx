@@ -6,6 +6,7 @@ function Entry({ update1, update2 }) {
 	const [entry, setEntry] = useState("");
 	const ref = useRef(null);
 	const [entrys, setEntrys] = useState([]);
+	const [buttonText, setButtonText] = useState("My Favorite Color");
 
 	// hashes the name from the entry box
 	function hashing(name) {
@@ -55,6 +56,7 @@ function Entry({ update1, update2 }) {
 
 	const onNameChange = (event) => {
 		setEntry(event.target.value);
+		setButtonText(event.target.value + "'s Favorite Color");
 	};
 
 	const onButtonClick = () => {
@@ -81,7 +83,7 @@ function Entry({ update1, update2 }) {
 				maximum-scale="1"
 			></input>
 			<button className="button" onClick={onButtonClick}>
-				My Favorite Color
+				{buttonText}
 			</button>
 		</>
 	);
