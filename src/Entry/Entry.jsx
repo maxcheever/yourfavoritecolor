@@ -78,6 +78,7 @@ function Entry({ update1, update2 }) {
 				className="input"
 				placeholder="Name..."
 				onChange={onNameChange}
+				maximum-scale="1"
 			></input>
 			<button className="button" onClick={onButtonClick}>
 				My Favorite Color
