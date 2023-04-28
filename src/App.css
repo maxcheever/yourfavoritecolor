@@ -1,3 +1,8 @@
+body {
+   overflow: hidden; 
+   height: 100%;
+}
+
 .top {
    display: flex;
    flex-direction: column;
@@ -30,5 +35,21 @@
    font: 1.7vmin sans-serif;
    padding-right: 2.5vmin;
    margin-top: -1vmin;
-   margin-bottom: 12vmin;
+   margin-bottom: 7vmin;
+}
+
+.link-div {
+   position: absolute;
+   bottom: 2vmin;
+}
+
+.link {
+   color: white;
+   font-size: 2vmin;
+   margin-left: 0.75vmin;
+}
+
+.fa-github {
+   color: white;
+   font-size: 2vmin;
 }
